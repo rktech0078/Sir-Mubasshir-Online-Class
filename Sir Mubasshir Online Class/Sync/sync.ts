@@ -24,6 +24,7 @@ type carType = {
     model: string,
     year: number,
     price: number
+    isUsed?:boolean
 }
 
 const car: carType = {

@@ -4,9 +4,9 @@ let userName: string = "Abdul Rafay Khan";
 
 console.log(userName);
 
-let age: number = 18;
+let ages: number = 18;
 
-if(age => 18){
+if((ages: any) => 18){
     console.log("User is eligible to vote");
 }else{
     console.log("User is not eligible to vote");

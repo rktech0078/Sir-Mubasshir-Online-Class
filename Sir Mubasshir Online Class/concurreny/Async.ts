@@ -10,7 +10,7 @@
 // console.log("TWO");
 
 
-function washing (callback){
+function washing (callback:any){
     console.log("Washing started");
     setTimeout(() => {
         console.log("Washing finished");
@@ -18,7 +18,7 @@ function washing (callback){
     },5000)
 };
 
-function soaking (callback){
+function soaking (callback:any){
     console.log("Soaking started");
     setTimeout(() => {
         console.log("Soaking finished");

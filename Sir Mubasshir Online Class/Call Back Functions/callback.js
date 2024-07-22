@@ -9,10 +9,11 @@ function childFunction() {
 // ***** Example *****
 function aFunction(xyz) {
     console.log("Hello I'm Console");
-    var names = "Abdul Rafay Khan";
+    let names = "Abdul Rafay Khan";
     xyz(names);
 }
 function bFunction(name) {
     console.log("Hello, I'm 'b' Fuction " + name);
 }
 aFunction(bFunction);
+export {};

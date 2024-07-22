@@ -5,7 +5,7 @@
 // console.log("TWO");
 function washing(callback) {
     console.log("Washing started");
-    setTimeout(function () {
+    setTimeout(() => {
         console.log("Washing finished");
         callback();
     }, 5000);
@@ -13,7 +13,7 @@ function washing(callback) {
 ;
 function soaking(callback) {
     console.log("Soaking started");
-    setTimeout(function () {
+    setTimeout(() => {
         console.log("Soaking finished");
         callback();
     }, 3000);
@@ -21,13 +21,14 @@ function soaking(callback) {
 ;
 function drying() {
     console.log("Drying Started");
-    setTimeout(function () {
+    setTimeout(() => {
         console.log("Drying finished");
     }, 3000);
 }
-washing(function () {
-    soaking(function () {
+washing(() => {
+    soaking(() => {
         drying();
     });
 });
 console.log("THREE");
+export {};
